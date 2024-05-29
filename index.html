@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+
+<body background="1612761186_47-p-fon-goluboi-metall-69.jpg">
+    <div class="conteiner">
+        <div class="header">
+            <div class="author">
+                <div class="info_box">
+                    <h2>Клепчук Ярослав "YarikTzy".</h2>
+                    <img src="kid-bomba-geek-fam-1.jpg" width="170" height="120">
+                    <p>
+                        <span>Главная позиция:Линия опыта</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="skills">
+            <h3></h3>
+            <hr>
+            <p>
+                Две команды, состоящие (каждая) из 5 игроков, сражаются друг с другом, чтобы достичь и уничтожить замок («базу», «трон» ) противника, 
+                одновременно защищая свой для контроля пути — трёх «линий» («верхняя» — топ, «центральная» — мид и «нижняя» — бот), соединяющих замки. 
+                В игре также есть карта с изображением таймингов — «баффов» и полоской здоровья на иконке героев.
+                Каждый игрок управляет своим персонажем («героем»). Более слабые, управляемые компьютером персонажи, называемые «миньоны», 
+                появляются на замках команд и следуют по трём линиям до замка противоположной команды, сражаясь с врагами и башнями.
+                Также присутствует система боевых заклинаний. Главной задачей является полное уничтожение центрального замка противников.
+            </p>
+            <h3>доп позиции</h3>
+            <hr>
+
+            <p class="ok">
+
+                Роум
+            </p>
+            <h3>Стаж игры</h3>
+            <hr>
+            <p class="not-learned">
+                Год
+            </p>
+            <h3>Любимые герои /h3>
+            <hr>
+            <p class="ponti">
+
+                Чонг Тэризла Пакито
+            </p>
+            <h3>Контакты</h3>
+            <hr>
+            <ul class="contacts">
+                <li>
+                    <img src="terizla.jpg" width="30" height="30" /><a
+                        href="yaroslavklepchuk@mail.ru">yaroslavklepchuk@mail.ru</a>
+                </li>
+                <li>
+                    <img src="terizla.jpg" width="30" height="30" /><a href="tel:8-800-555-35-35">8-800-555-35-35</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <script>
+        function func1() {
+            if (confirm('Доброго времени суток, у этой страницы есть к вам вопрос, вы готовы ответить?')) {
+                var name = prompt('Как вас зовут?', 'Введите сюда ваше имя');
+                var admin = name;
+                alert("Ваше имя - " + admin)
+            }
+            alert("Спасибо, что уделили время")
+        }
+    </script>
+
+    <script>
+        function func2() {
+            if (confirm('Доброго времени суток, у этой страницы есть к вам вопрос, вы готовы ответить?')) {
+                while (true) {
+
+                    var age = prompt('ваш возраст?');
+                    if (confirm("Ваш возраст - " + age + " ?")) {
+                        alert("Спасибо, что уделили время")
+                        break
+                    }
+                    else {
+                        alert("Вы нажали кнопку отмена")
+                    }
+
+                }
+            }
+        }
+    </script>
+
+
+    <input type="text" id="newSurname" placeholder="Введите новую фамилию">
+    <button onclick="changeSurname()">Изменить фамилию</button>
+    <p>Текущая фамилия: <span id="surname">Клепчук</span></p>
+
+    <script>
+        function changeSurname() {
+            var newSurname = document.getElementById("newSurname").value;
+            document.getElementById("surname").innerText = newSurname;
+        }
+    </script>
+
+    <title>JavaScript в HTML</title>
+    <script>
+        function areEqual() {
+            // Получаем значения из полей ввода
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            // Проверяем, равны ли числа
+            var result = num1 === num2;
+
+            // Отображаем результат в окошке
+            document.getElementById("result").innerText = result ? "Числа равны" : "Числа не равны";
+        }
+
+    </script>
+
+    <h1 align="center" class="hover-text" style="font-size: 30px;">JavaScript</h1>
+    <h1>Проверка на равенство чисел</h1>
+    <label for="num1">Число 1:</label>
+    <input type="text" id="num1"><br><br>
+    <label for="num2">Число 2:</label>
+    <input type="text" id="num2"><br><br>
+    <button onclick="areEqual()">Проверить</button>
+    <div id="result"></div>
+
+    <div>
+        <p>Скрипты:</p>
+        <button onclick="func1()">Спросить имя</button>
+        <button onclick="func2()">Спросить возраст</button>
+    </div>
+</body>
+
+<style>
+    body {
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif, serif;
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+    .ok {
+        color: rgb(255, 255, 255);
+    }
+
+    .learning-in-progress {
+        color: rgb(255, 255, 255);
+    }
+
+    .ponti {
+        color: #ffffff;
+        font-size: 40;
+        /* font-stretch:expanded; */
+        text-shadow: 2px 2px rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        outline: green dotted thick;
+
+    }
+
+
+    .not-learned {
+        color: red;
+    }
+</style>
